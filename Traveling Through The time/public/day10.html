@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Sans Thai">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <title>Time Travel</title>
+    <link rel="stylesheet" href="css/day10.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <div class="date">
+                <p>day</p>
+                <h1></a> 10</h1>
+                <h2><a href="day11.html">11</a></h2>
+                <h2><a href="day12.html">12</a></h2>
+                <h2><a href="day13.html">13</a></h2>
+                <h2><a href="day14.html">14</a></h2>
+                <h2><a href="day16.html">16</a></h2>
+            </div>
+        </div>
+        <div class="rightside">
+            <div class="hidden">
+                <p>day </p>
+                <h1>10</h1>
+            </div>
+            <div class="container">
+                <div class="emotion">
+                    <i class='bx bxs-happy purple'></i>
+                    <i class='bx bxs-smile blue' ></i>
+                    <i class='bx bxs-meh yellow' ></i>
+                    <i class='bx bxs-sad orange' ></i>
+                    <i class='bx bxs-angry pink' ></i>
+                </div>
+                <div class="content">
+                    เป็นวันแรกที่เค้าได้เข้ามาทำกิจกรรมในค่ายนี้ เลยรู้สึกตื่นเต้นมากๆ ไม่ว่าจะเป็นการพูดคุยกับพี่ๆ หรือการพูดคุยกับเพื่อนๆ 
+                    ในเซคเดียวกัน แต่เพื่อนๆ พี่ๆ น่ารักกันมาก เป็นกันเองที่สุดเวลาเราสงสัยตรงไหนคือสามารถซัพพอร์ตเราได้ไม่ว่าจะเป็น
+                    ตั้งแต่การใช้งานzoom พี่ๆ ก็ได้มีการทำเป็นไฟล์ให้อ่านและสอนเข้าใช้งานในเวลาจริง พี่ๆ ใส่ใจมาก ภายในค่ายก็มีการ
+                    แนะนำเกี่ยวกับค่ายว่ามีอะไรบ้างมีภารกิจให้ทำทุกวันแล้วสิ่งที่น่าค้นหามากๆ คือdr.ปริศนาที่พวกเราต้องพยายามว่าเขาคนนั้น
+                    คือใคร เลยเป็นอะไรที่น่าลุ้นมากๆ ในภาคเช้าก็ยังมีรุ่นพี่ที่จบจากสายงานวิศวะคอมมาเล่าถึงประสบการณ์การทำงานที่พี่เขาทำ
+                    ในตอนนี้ด้วยและยังมีการพูดคุยถามตอบกับพวกเราทุกคนด้วย และ ภาคบ่ายคือช่วงการทำกิจกรรมสันทนาการเท่าที่เค้าจำได้
+                    คือเป็นกิจกรรมเกี่ยวกับการจำที่สนุกมากๆ เพื่อนๆ ทุกคนคือตอบได้กันหมดเลย สุดยอดมาก ความจำดีเลิศ และมีบทโทษของ
+                    เกมนี้นั่นก็คือ การแนะนำตัวเองให้เพื่อนฟังๆ และยังมีเกมทายภาพแบบดาวินชีซึ่งสนุกมากๆ เพื่อนๆ คือสุดยอดของสุดยอดเลย
+                    เพื่อนๆ คือสุดยอดของสุดยอดเลย เค้าคิดว่าภาคบ่ายคือสนุกมากๆ เพราะได้ทำความรู้จักกับเพื่อนๆ ด้วยและเพื่อนๆ แต่ละคน
+                    คือน่ารักกันมากๆ ค่ายนี้ถือว่าเป็นค่ายที่เค้ารู้สึกสนุกมากๆ แล้วก็รู้สึกดีใจที่ได้มาเป็นส่วนหนึ่งของค่ายcomcamp33ในครั้งนี้ แล้วพี่ๆ 
+                    คือเอ็นเตอร์เทนดีมาก เลยทำให้พวกเราทุกคนสนุกมากๆ และ มาถึงในช่วงสุดท้ายพี่ๆ ก็อธิบายการเข้ากิจกรรมการทำกิจกรรม
+                    ต่างๆ เช่นการทำภารกิจและภารกิจในวันที่10ก็คือการโพสต์สตอรี่ที่เกี่ยวกับcomcamp33 ในหัวข้อ black to the retro อันนี้
+                    จะเป็นสิ่งที่เค้าได้ลงไป แล้วภารกิจนี้ก็ทำให้เราได้พูดคุยกับเพื่อนมากขึ้น ไม่ว่าจะเป็นการถามกันว่าจะลงแบบไหนดี ขอแท็กเพื่อน
+                    หน่อยได้มั้ย กิจกรรมนี้ก็ทำให้เราได้พูดคุย รู้จัก และสนิทกับเพื่อนๆ มากขึ้นไปอีก และพี่ๆ ก็มีการชวนพวกเราเล่นเกม คุย 
+                    นั่งฟังเพลง ในตอนกลางคืนเพื่อทำให้สนิทกันมากขึ้นและสานสัมพันธ์แบบพี่น้องให้มีความสัมพันธ์กันที่ดียิ่งขึ้น
+                    
+                    <div  class="pic10">
+                        <img class="image" src="images/day10.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="p2">
+                <div class="comment-div" id="comment-div">
+                    
+                </div>
+                <div class="comment">
+                    <textarea placeholder="comment..." id="comment"></textarea>
+                </div>
+                <button onclick="saveData()" class="button" role="button" id="button">submit</button>
+            </div>
+            <div class="menu">
+                <a href="index.html"><i class='bx bx-left-arrow-alt' ></i>Home</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

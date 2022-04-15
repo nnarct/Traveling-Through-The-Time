@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+}
+
+    body {
+        background-color: #5881EB;
+    }
+
+h1, p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+h2, a {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+h2:hover, a:hover {
+    opacity: 0.7;
+}
+
+.screen {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.leftside {
+    padding: 150px 120px;
+}
+
+.leftside .date {
+    text-align: center;
+}
+
+.leftside p {
+    font-size: 30px;
+}
+
+.leftside h1 {
+    font-size: 70px;
+    font-style: italic;
+}
+
+.rightside {
+    width: 100%;
+}
+
+.rightside .container {
+    margin: 100px 180px 40px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.rightside .container .emotion {
+    background-color: #000;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.rightside .container .emotion i {
+    font-size: 40px;
+}
+
+.purple {
+    color: #5834EB;
+}
+
+.blue {
+    color: #347DEB;
+}
+
+.yellow {
+    color: #FFE600;
+}
+
+.orange {
+    color: #FF7A00;
+}
+
+.pink {
+    color: #DE2FAD;
+}
+
+.rightside .container .content {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    background-color: white;
+    padding: 50px;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.p2 {
+    margin: 20px 180px 40px 0px;
+}
+
+textarea {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.rightside .button {
+    float: right;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+  
+.rightside .button:after {
+    content: "";
+    background-color: #FFF;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+  
+.rightside .button:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+.cm {
+    margin: 2% 5% 2% 5%;
+    padding: 18px;
+    width: 90%;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.menu {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.menu a {
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 30px;
+    color: #FFF;
+    text-decoration: none;
+    transition: all 0.35s ease;
+}
+
+.menu a:hover {
+    opacity: 0.6;
+}
+
+.hidden {
+    display: none;
+}
+
+.content .pic10 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1196px) {
+    .leftside {
+        display: none;
+    }
+    .rightside {
+        width: 100%;
+    }
+    .rightside .container {
+        margin: 50px;
+        display: block;
+    }
+    .rightside .container .emotion {
+        background-color: #000;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .rightside .container .content {
+        font-size: 18px;
+    }
+    .p2 {
+        margin: 50px;
+    }
+    .menu {
+        margin-top: 120px;
+        margin-left: 80px;
+    }
+    .hidden {
+        font-family: 'Montserrat', sans-serif;
+        margin: 20px ;
+        display: block;
+        color: #FFF;
+        text-align: center;
+        font-size: 30px;
+    }
+    .content .pic10 img{
+        width: 100%;
+    }
+}

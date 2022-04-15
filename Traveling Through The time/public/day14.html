@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Sans Thai">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <title>Time Travel</title>
+    <link rel="stylesheet" href="css/day10.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <div class="date">
+                <h2><a href="day10.html">10</a></h2>
+                <h2><a href="day11.html">11</a></h2>
+                <h2><a href="day12.html">12</a></h2>
+                <h2><a href="day13.html">13</a></h2>
+                <p>day</p>
+                <h1>14</h1>
+                <h2><a href="day16.html">16</a></h2>
+            </div>
+        </div>
+        <div class="rightside">
+            <div class="hidden">
+                <p>day </p>
+                <h1>14</h1>
+            </div>
+            <div class="container">
+                <div class="emotion">
+                    <i class='bx bxs-happy purple'></i>
+                    <i class='bx bxs-smile blue' ></i>
+                    <i class='bx bxs-meh yellow' ></i>
+                    <i class='bx bxs-sad orange' ></i>
+                    <i class='bx bxs-angry pink' ></i>
+                </div>
+                <div class="content">
+                    วันนี้ก็เป็นวันที่ 5 ที่ได้มาเข้าค่าย comcamp33 แล้วเนาะ เวลาผ่านไปเร็วมาก เมื่อวานยังนึกว่าเพิ่งสมัครไปเองอะ วันนี้ก็เริ่มค่ายมาด้วยการที่พี่วิทยากรมาบรรยายเกี่ยวกับ cyber security ว่าสิ่งนี้คืออะไร หมายความว่ายังไง การทำงานเป็นแบบไหน แถมยังได้รู้ข่าวสารที่เกิดทั้งในไทยแล้วก็ต่างประเทศอีก พี่วิทยากรเป็นกันเองมากๆ ได้รู้ถึงหลักพื้นฐาน CIA ซึ่งแบบเป็นหัวข้อที่น่าสนใจมาก พอฟังพี่เค้าบรรยายเสร็จก็ได้ไปพักเที่ยง พักจนถึงบ่ายโมงยี่สิบก็ได้มาเล่นกิจกรรมทายภาพที่เปิดแผ่นป้ายแล้วคือเพื่อนๆ ตอบกันเร็วมาก เพื่อนๆ มีทริคอย่างนึงคือจะยึดเอาเลขตรงกลางเป็นหลักซึ่งเป็นความคิดที่เจ๋งแจ๋วมาก เพราะบางทีเปิดไปก็เจอเลย บางทีอาจจะไม่เจอแต่เพื่อนๆ ก็สามารถตอบได้ แล้วตอบถูกด้วย แบบเปิดมาเจอแค่ท้องฟ้าก็ตอบถูกแล้วอะ งงตุ้บเลย พอตกเย็นพี่ๆ เค้าก็ได้มีการชี้แจงเกี่ยวกับมินิโปรเจคที่ต้องทำกัน เราก็เริ่มสุมหัวกันเลยค่ะทีนี้ มีเพื่อนคนนึงเสนอว่าจะทำไดอารี่ก็ไม่รีรอเลย เป็นความคิดที่ดีมาก ไม่ยากด้วย พอซักพักก็มีพี่ทีเอเข้ามาให้คำปรึกษาให้คำแนะนำซึ่งเพื่อนก็คือเก่งสุดยอดมากทำเสร็จไปแล้วหน้านึง ผมนี่ยากจะลุกขึ้นปรบมือให้ดังเลย หลังจากนั้นก็ได้คุยกับเพื่อนได้ปรึกษานู่นนั่นนี่กับพี่ๆ จนถึงสี่โมง เสร็จแล้วก็กลับมารวมกันอีกครั้งตอน 6 โมงครึ่ง ครั้งนี้ก็คือทำงานยาวไปจนถึงห้าทุ่มเลย ตาปรือมาก แต่ทุกคนก็คือสู้ชีวิตไม่ถอยเลย ก่อนจะทยอยขอตัวลากันไปนอนพักผ่อนเพื่อมาต่อสู้กันในวันพรุ่งนี้
+                    <div  class="pic10">
+                        <img class="image" src="images/day14.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="p2">
+                <div class="comment-div" id="comment-div">
+                    
+                </div>
+                <div class="comment">
+                    <textarea placeholder="comment..." id="comment"></textarea>
+                </div>
+                <button onclick="saveData()" class="button" role="button" id="button">submit</button>
+                <div class="menu">
+                    <a href="index.html"><i class='bx bx-left-arrow-alt' ></i>Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

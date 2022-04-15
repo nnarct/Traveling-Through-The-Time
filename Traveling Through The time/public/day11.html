@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Sans Thai">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <title>Time Travel</title>
+    <link rel="stylesheet" href="css/day11.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <div class="date">
+                <h2><a href="day10.html">10</a></h2>
+                <p>day</p>
+                <h1></a> 11</h1>
+                <h2><a href="day12.html">12</a></h2>
+                <h2><a href="day13.html">13</a></h2>
+                <h2><a href="day14.html">14</a></h2>
+                <h2><a href="day16.html">16</a></h2>
+            </div>
+        </div>
+        <div class="rightside">
+            <div class="hidden">
+                <p>day </p>
+                <h1>11</h1>
+            </div>
+            <div class="container">
+                <div class="emotion">
+                    <i class='bx bxs-happy purple'></i>
+                    <i class='bx bxs-smile blue' ></i>
+                    <i class='bx bxs-meh yellow' ></i>
+                    <i class='bx bxs-sad orange' ></i>
+                    <i class='bx bxs-angry pink' ></i>
+                </div>
+                <div class="content">
+                    ในวันนี้เป็นวันที่ได้เริ่มเรียนเกี่ยวกับวิชาการเป็นวันแรก ซึ่งช่วงเช้าถึงช่วงพักเที่ยง พี่ ๆ ก็ได้สอนเกี่ยวกับ Pre Programming 
+                    และ C Programming ซึ่งพี่ ๆ ก็มีวิธีการสอนให้เราเข้าใจและเปิดโอกาสให้น้อง ๆ สอบถามตลอดเวลา นอกเหนือจากนี้พี่ ๆ 
+                    ยังมีแบบทดสอบให้น้อง ๆ ลองทำแล้วส่งในช่องแชทของ zoom เช่นให้ลองเขียน flowchart ใน Blank diagram แล้วก็
+                    ให้หาชื่อตัวแปรที่ใช้งานไม่ได้ ส่วนในช่วงบ่ายถึงช่วงเย็น พี่ ๆ ได้มาสอน C Programming ต่อจากช่วงเช้า เรียกได้ว่าเป็นการ
+                    สอนที่พี่ ๆ พยายามที่จะสอนเนื้อหาให้ได้ครอบคลุมมากที่สุด และถ้าใครไม่เข้าใจ ก็สามารถถามพี่ ๆ คนสอนและพี่ ๆ TA ได้
+                    ตลอดเวลาทั้งขณะที่สอน หรือแม้กระทั่งพี่ ๆ สอนจบเรียบร้อย เราก็สามารถที่จะไปถามพี่ ๆ ได้เพิ่มเติม ซึ่งพี่ ๆ ก็พร้อมที่จะให้
+                    คำปรึกษากับเราเกือบจะ 24 ชั่วโมงเลย หลังจากที่จบไปแล้วกับกิจกรรมวันแห่งวิชาการนี้ ความรู้ที่น้องๆ ทุกคนได้รับจากพี่ ๆ 
+                    นั้นล้นหลามมาก ๆ ถึงแม้ว่าจะเป็นระยะเวลาสั้น ๆ ทำให้เราอาจจะจำไม่ได้ทั้งหมด แต่ก็ประทับใจพี่ ๆ ในเรื่องของความใส่ใจ
+                    น้อง ๆ และความตั้งใจในการจัดกิจกรรม Comcamp 33 นี้ขึ้นมา อีกทั้งพี่ ๆ ยังมีเว็บ Grader ให้น้อง ๆ ได้ลองฝึกทำโจทย์ด้วย 
+                    แต่ทว่าในช่วง 6 โมงเย็นนั้น ก็มีข้อความคำใบ้ปริศนามาจากด็อกเตอร์ ที่เราต้องทายให้ได้ว่าใครเป็นด็อกเตอร์ปริศนากันนะ!!!
+                    
+                    <div  class="pic10">
+                        <img class="image" src="images/day11.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="p2">
+                <div class="comment-div" id="comment-div">
+                    
+                </div>
+                <div class="comment">
+                    <textarea placeholder="comment..." id="comment"></textarea>
+                </div>
+                <button onclick="saveData()" class="button" role="button" id="button">submit</button>
+            </div>
+            <div class="menu">
+                <a href="index.html"><i class='bx bx-left-arrow-alt' ></i>Home</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

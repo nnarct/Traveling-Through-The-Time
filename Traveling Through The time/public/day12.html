@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Sans Thai">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <title>Time Travel</title>
+    <link rel="stylesheet" href="css/day10.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <div class="date">
+                <h2><a href="day10.html">10</a></h2>
+                <h2><a href="day11.html">11</a></h2>
+                <p>day</p>
+                <h1>12</h1>
+                <h2><a href="day13.html">13</a></h2>
+                <h2><a href="day14.html">14</a></h2>
+                <h2><a href="day16.html">16</a></h2>
+            </div>
+        </div>
+        <div class="rightside">
+            <div class="hidden">
+                <p>day </p>
+                <h1>12</h1>
+            </div>
+            <div class="container">
+                <div class="emotion">
+                    <i class='bx bxs-happy purple'></i>
+                    <i class='bx bxs-smile blue' ></i>
+                    <i class='bx bxs-meh yellow' ></i>
+                    <i class='bx bxs-sad orange' ></i>
+                    <i class='bx bxs-angry pink' ></i>
+                </div>
+                <div class="content">
+                    เช้าที่สดใสในวันที่ 12 ในวันนี้จะเริ่มด้วยการทำกิจกรรมสันทนาการในช่วงเช้า พี่ๆทุกคนก็รอน้อง ๆใน discord เมื่อน้อง ๆ 
+                    เข้ากันครบแล้วก็มีการกล่าวเปิดวันตามปกติ จากนั้นพี่ๆก็ให้น้อง ๆ แยกกันไปตามห้อง discord ของ Sec ตัวเอง เกมแรก
+                    ของวันคือ ขอนับหน่อยเดะ โดยเกมนี้เป็นเกมที่พี่ๆจะให้ดูภาพ 25 วินาที ในระหว่างนั้นให้น้อง ๆทุกคนช่วยกันจดจำสิ่งต่างๆ
+                    ในภาพรวมถึงจำนวนของมันด้วย เมื่อหมดเวลาที่กำหนดให้แล้ว พี่ๆจะปิดภาพแล้วถามจำนวนสิ่งต่างๆ ในภาพ ในเกมนี้
+                    ถือว่าเป็นเกมที่น่าประทับใจเลยทีเดียว เพราะเพื่อนๆที่ต่างคนต่างไม่รู้จักกันก็เปิดไมค์และบอกข้อมูลของตัวเอง ช่วยกัน
+                    ตอบคำถาม จบเกมแรกทุกคนก็ไปรวมกันที่ห้องรวมเช่นเคย พี่ๆกิจกรรมก็จะสรุปสิ่งที่ได้ในกิจกรรมนี้ โดยสิ่งที่ได้แน่นอน
+                    คือความสามัคคีในกลุ่มและได้พูดคุยกับเพื่อนใหม่ๆ นอกจากนั้นยังมีการประกาศอันดับของแต่ละ Sec ในเกมนี้ด้วย ถึง
+                    จะไม่ได้ที่ 1 แต่ก็ภูมิใจในเพื่อนๆมาก ๆ เมื่อถึงเวลาของเกมที่ 2 นั่นคือเกม Tower of Hanoi เป็นเกมเบสิกและง่ายมาก
+                    ถ้าเล่นคนเดียว แต่เมื่อเป็นเกมที่ต้องช่วยกันเล่นทำให้รู้สึกยากขึ้นหลายเท่า เพราะความคิดของแต่ละคนต่างกัน เมื่อคนนึง
+                    ขยับ Disk อาจจะไปตรงกับที่เพื่อนคนนึงคิดไว้ แต่มันก็อาจจะไปขัดกับความคิดของอีกคน แต่ก็สามารถผ่านเกมนี้มาได้
+                    ด้วยความร่วมมือและความสามัคคีของทุกคนใน Sec เมื่อจบเกมก็สรุปกิจกรรมและประกาศอันดับเช่นเคย ต่อไปเป็นพัก
+                    เที่ยงและถึงเวลาเข้าสู่ช่วงวิชาการ เป็นช่วงที่ทำให้เครียดนิดหน่อยแต่ก็ได้ความรู้มาเต็มเปี่ยมเช่นกัน ของวันที่ 12 พี่ๆจะสอนภาษา Python อาจจะเป็นวิชาที่ไม่ซับซ้อนที่สุดในทุกวันก็ได้(มั้ง) ระหว่างสอนพี่ๆก็มีคำถามเล็กน้อยเพื่อถามความ
+                    เข้าใจของน้อง ๆ และน้อง ๆที่ตอบได้ก็จะได้คะแนนไปด้วย ค่ายนี้นอกจากจะต้องมีความรู้แล้ว ก็ต้องมีดวงให้พี่ๆเลือกโดน
+                    ด้วย พี่ๆสอนจบก็มีสรุปหัวข้อที่สอนเล็กน้อยแล้วก็ปล่อยน้อง ๆไปพักเป็นอันจบวัน
+                    <div  class="pic10">
+                        <img class="image" src="images/day12.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="p2">
+                <div class="comment-div" id="comment-div">
+                    
+                </div>
+                <div class="comment">
+                    <textarea placeholder="comment..." id="comment"></textarea>
+                </div>
+                <button onclick="saveData()" class="button" role="button" id="button">submit</button>
+                <div class="menu">
+                    <a href="index.html"><i class='bx bx-left-arrow-alt' ></i>Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

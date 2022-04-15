@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+/* body {
+    /* background-color: #ffc082; 
+    background-image: linear-gradient(20deg, #ffc082 0%, #ff9429 100%);
+    
+} */
+
+body {
+    font-family: 'Nunito', sans-serif;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    min-width: 610px;
+  }
+  .com {
+    text-align: center;
+    position: relative;
+    font-size: 5vw;
+    color: #ffc08200;
+    -webkit-text-stroke: 0.3vw whitesmoke;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  .com:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #5881eb;
+    border-right: 2px solid #5881eb;
+    -webkit-text-stroke: 0vw whitesmoke;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+  }
+  @keyframes animate {
+    0%,
+    10%,
+    100% {
+      width: 0;
+    }
+    70%,
+    90% {
+      width: 100%;
+    }
+  }
+
+p {
+    font-family: 'Nunito', sans-serif;
+    color: #FFF;
+    opacity: 0.7;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.month {
+    padding: 20px 185px;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px 10px 0px 0px;
+    min-width: 610px;
+}
+
+.month ul {
+    margin: 0;
+    padding: 10;
+}
+
+.month ul li {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month ul li h2 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: -5px;
+}
+
+.month ul li span {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.weekdays {
+    min-width: 610px;
+    margin: 0;
+    padding: 20px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: rgb(78, 78, 78);
+    text-align: center;
+    font-size: 20px;
+}
+
+.days {
+    padding: 30px 0;
+    background: #eee;
+    margin: 0;
+    border-radius: 0px 0px 10px 10px;
+    min-width: 610px;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 300;
+    color: rgb(88, 88, 88);
+    text-decoration: none;
+}
+
+.days .inactive {
+    color: #eee;
+}
+
+.days li .active {
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff; 
+    background-image: linear-gradient(155deg, #667eea 0%, #764ba2 100%); 
+    transition: 0.5s all linear;
+    color: #fff9a4;
+}
+
+.days li .coactive {
+    cursor: default;
+    padding: 10px;
+    background-image: linear-gradient(155deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    color: white;
+}
+
+.days li  .active:hover {
+    background-image: linear-gradient(65deg, #667eea 0%, #764ba2 100%); 
+    opacity: 1;
+    color: white;
+}
+
+
+
+.days li a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1196px) {
+    .com {font-size: 50px;}
+    .month h2 {
+        text-align: center;
+    }
+    .month p {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .weekdays li {
+        font-size: 16px;
+    }
+    .days li {
+        font-size: 18px;
+    }
+  }

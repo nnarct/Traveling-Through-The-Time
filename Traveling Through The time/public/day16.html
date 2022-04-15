@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Sans Thai">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <title>Time Travel</title>
+    <link rel="stylesheet" href="css/day11.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <div class="date">
+                <h2><a href="day10.html">10</a></h2>
+                <h2><a href="day11.html">11</a></h2>
+                <h2><a href="day12.html">12</a></h2>
+                <h2><a href="day13.html">13</a></h2>
+                <h2><a href="day14.html">14</a></h2>
+                <p>day</p>
+                <h1>16</h1>
+            </div>
+        </div>
+        <div class="rightside">
+            <div class="hidden">
+                <p>day </p>
+                <h1>16</h1>
+            </div>
+            <div class="container">
+                <div class="emotion">
+                    <i class='bx bxs-happy purple'></i>
+                    <i class='bx bxs-smile blue' ></i>
+                    <i class='bx bxs-meh yellow' ></i>
+                    <i class='bx bxs-sad orange' ></i>
+                    <i class='bx bxs-angry pink' ></i>
+                </div>
+                <div class="content">
+                    วันสุดท้ายของค่าย Comcamp33 แล้ว เป็นวันที่ง่วงหน่อยๆ เพราะต้องเตรียมตัวพรีเซนต์ mini project แล้วก็เครียดพอสมควรเลย
+                    วันนี้เป็นวันที่ต้องเสนอ mini project อย่างเป็นทางการหลังจากสู้รบกันมาอย่างยาวนาน มันค่อนข้างจะเพลียด้วยแหละแต่ทุกคนก็ฮึดสู้มาก 
+                    ทุกคนเก่งกันมากๆเลย วันนี้ก็เป็นวันสุดท้ายแล้ว ขอบคุณทุกคนมากๆเลยนะ ดีใจมากๆที่เราได้มาเจอกันได้พูดคุยแล้วก็ทำงานด้วยกัน  
+                    และในวันที่เราเสนอโปรเจคเราจะดูโปรเจคของเพื่อนๆในกลุ่มอื่นด้วยซึ่งเป็นอะไรที่น่าตื่นเต้นมากๆเพราะเพื่อนๆทุกกลุ่มได้ดีไซน์ผลงาน
+                    ด้วยตัวเองซึ่งเป็นอะไรที่น่าทึ่งมากๆ แถมเรายังต้องเตรียมตัวตอบถามQ&Aด้วยนี่สิ
+                    <div  class="pic10">
+                        <img class="image" src="images/day16.png">
+                    </div>
+                </div>
+            </div>
+            <div class="p2">
+                <div class="comment-div" id="comment-div">
+                    
+                </div>
+                <div class="comment">
+                    <textarea placeholder="comment..." id="comment"></textarea>
+                </div>
+                <button onclick="saveData()" class="button" role="button" id="button">submit</button>
+                <div class="menu">
+                    <a href="index.html"><i class='bx bx-left-arrow-alt' ></i>Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
